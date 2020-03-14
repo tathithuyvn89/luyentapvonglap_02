@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình tam giác</title>
+</head>
+<body>
+
+<script>
+    //Hình tam giác thứ nhất
+    // let t=1;
+    // let q= 1;
+    // while (t<7) {
+    //     while (q<t) {
+    //     document.write("*");
+    //     q++;
+    // }
+    // document.write(("<br/>"));
+    // t++;
+    // q=1;
+    // }
+    //Hình tam giác thứ 2
+   // let  cot;
+   // let  hang;
+   // for (cot=1 ;cot<6; cot++){
+   //     for (hang=6; hang>cot; hang--){
+   //         document.write("*");
+   //     }
+   //     document.write("<br/>");
+   // }
+// Hình tam giác thú 3
+
+    for (let i=1; i<=6; i++){
+
+        for ( let a=1; a<=6; a++){
+           if (a > (6-i)){
+               document.write("*");
+           }else {
+               document.write("\&nbsp;\&nbsp;");
+           }
+
+
+
+        }document.write("<br/>");
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiện thị dãy số Fibonacci</title>
+</head>
+<body>
+<script>
+    let lengthOfFibonacci = parseInt(prompt("Nhập vào chiều dài của dãy Fibonacci mà bạn muốn: "));
+    let n1=0;
+    let n2=1;
+    let n3;
+    for(i=0;i<lengthOfFibonacci; i++){
+        n3=n1+n2;
+        n1=n2;
+        n2=n3;
+        document.write(n3+" ");
+    }
+</script>
+</body>
+</html>

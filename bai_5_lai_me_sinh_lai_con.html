@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Công thức tiền lãi ngân hàng</title>
+</head>
+<body>
+<h1>Chào mừng các bạn đến với dịch vụ ngân hàng của chúng tôi</h1>
+<h2> Hiện tại mức lãi suất của chúng tôi là 8% 1 tháng</h2>
+<p> Để tính được số tiền lãi mà bạn nhận được sau số tháng mà bạn mong muốn xin bạn click vào đường dẫn sau</p>
+<form>
+    <button id="result" type="button" onclick="tienlai()">Tính toán tiền lãi</button>
+</form>
+
+<script>
+    function tienlai(){
+    let tienvon= parseInt(prompt("Hãy nhập số tiền mà bạn muốn gửi" ));
+    let n= parseInt(prompt("Hãy nhập số tháng mà bạn muốn gửi"));
+    let tienlai; //Đặt biến tiền lãi
+   document.write("Vối số tiền ban đầu của bạn là "+ tienvon + " triệu VND"+"<br/>");
+   document.write("Vố số tháng bạn muốn gửi là " + n+ " tháng" +"<br/>");
+   document.write("Số tiền lãi của ngân hàng chúng tôi là 8% /1 tháng" + "<br/>"+"************************************"+ "<br/>");
+    for (let i= 1; i<=n; i++){
+       tienlai=tienvon*0.08; // Tiền lãi là 8% 1 tháng
+       tienvon=tienlai+tienvon;
+       document.write("Số tiền nhận được tháng thứ "+ i + " là " + tienvon.toFixed(2) + " triệu đồng"+"<br/>");
+    }
+    document.write( "Số tiền sau " + n + " tháng là " + tienvon.toFixed(2)+" triệu đồng"+"<br/>");
+    document.write("<br/>"+ "<a href=\"bai_5_lai_me_sinh_lai_con.html\">Quay lại trang chủ</a>")
+
+    }
+</script>
+
+</body>
+</html>
